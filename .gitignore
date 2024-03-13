@@ -1,4 +1,6 @@
+// Unlock the following folder and files with:
 .env
 node_modules
 .vscode
 package-lock.json
+database

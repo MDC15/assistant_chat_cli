@@ -4,8 +4,8 @@
 */
 const dotenv = require("dotenv").config();
 
-const config = {
+const config_api = {
   apiKey: process.env.API_KEY,
 };
 
-module.exports = config;
+module.exports = config_api;

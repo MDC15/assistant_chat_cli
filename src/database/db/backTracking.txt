@@ -1,0 +1,61 @@
+ AI: Generating response...
+
+>>> **Thuật toán Backtracking**
+
+Backtracking là một kỹ thuật giải quyết vấn đề theo kiểu tái diễn (recursive), trong đó:
+
+* Vấn đề được chia nhỏ thành các trường hợp nhỏ hơn.
+* Các trường hợp này được giải quyết theo thứ tự.
+* Nếu một trường hợp không có giải pháp khả thi, thuật toán sẽ quay ngược trở lại và thử một trường hợp khác.
+
+**Cách thức hoạt động**
+
+Thuật toán backtracking hoạt động theo các bước sau:
+
+1. **Khởi tạo:** Xác định một giải pháp ban đầu và đặt nó vào một ngăn xếp.
+2. **Lặp:** Cho đến khi ngăn xếp rỗng:
+    * Lấy phần tử trên cùng của ngăn xếp.
+    * Nếu phần tử đó là một giải pháp hợp lệ, trả về nó.
+    * Nếu không, tạo các phần tử con từ phần tử hiện tại. Đẩy các phần tử con này vào ngăn xếp.
+3. **Quay ngược:** Nếu ngăn xếp rỗng và không có giải pháp hợp lệ được tìm thấy, thuật toán đã thất bại.
+
+**Ví dụ: Giải câu đố Sudoku**
+
+Giả sử chúng ta có một câu đố Sudoku như sau:
+
+```
++---------+---------+---------+
+| _ _ _ | _ _ _ | _ _ _ |
+| _ _ _ | _ 5 _ | _ _ _ |
+| _ _ _ | _ _ _ | _ _ _ |
++---------+---------+---------+
+| _ _ _ | _ _ _ | _ _ _ |
+| _ 8 _ | _ _ _ | _ 4 _ |
+| _ _ _ | _ _ _ | _ _ _ |
++---------+---------+---------+
+| _ _ _ | _ _ _ | _ _ _ |
+| _ _ _ | _ _ _ | _ 8 _ |
+| _ _ _ | _ _ _ | _ _ _ |
++---------+---------+---------+
+```
+
+Để giải câu đố này bằng backtracking:
+
+* **Khởi tạo:** Đặt ngăn xếp với một lưới trống.
+* **Lặp:** Cho đến khi ngăn xếp rỗng:
+    * Lấy lưới trên cùng của ngăn xếp.
+    * Duyệt qua các ô trống trong lưới.
+        * Đối với mỗi ô trống, thử đặt các số từ 1 đến 9.
+            * Nếu số đó là hợp lệ (không xung đột với bất kỳ số nào ở cùng hàng, cột hoặc khối 3x3), hãy đẩy một lưới mới với số đó vào ngăn xếp.
+    * Nếu không tìm thấy số hợp lệ nào, hãy bỏ lưới hiện tại khỏi ngăn xếp.
+* **Quay ngược:** Nếu ngăn xếp rỗng và không có giải pháp hợp lệ được tìm thấy, câu đố không thể giải được.
+
+**Ưu điểm**
+
+* Đảm bảo tìm thấy **tất cả** các giải pháp (nếu tồn tại).
+* Có thể được sử dụng để giải quyết nhiều loại vấn đề (ví dụ: câu đố tìm kiếm đường đi, bài toán tối ưu hóa).
+
+**Nhược điểm**
+
+* Có thể có hiệu suất kém đối với các vấn đề lớn (phụ thuộc vào kích thước của cây tìm kiếm).
+* Yêu cầu nhiều bộ nhớ (cần phải lưu trữ ngăn xếp).

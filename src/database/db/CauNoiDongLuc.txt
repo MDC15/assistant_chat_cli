@@ -1,0 +1,14 @@
+tạo những câu nói động lực
+
+ AI: Generating response...
+
+>>> 1. "Thành công không phải là đích đến, mà là cuộc hành trình." - Zig Ziglar
+2. "Đừng sợ thất bại, mà hãy sợ không thử." - Roy Bennet
+3. "Bạn không thể kiểm soát gió, nhưng bạn có thể điều chỉnh cánh buồm." - Dolly Parton
+4. "Mỗi ngày là một cơ hội mới để bắt đầu lại." - Robin Sharma
+5. "Đừng so sánh mình với người khác, hãy so sánh mình với chính mình." - Bill Gates
+6. "Đừng từ bỏ ước mơ của mình, dù có bất cứ chuyện gì xảy ra." - Steve Jobs
+7. "Hãy nhớ rằng, bạn có thể đạt được bất cứ điều gì bạn mong muốn, chỉ cần bạn tin vào chính mình." - Oprah Winfrey
+8. "Hãy sống hết mình, đừng để cuộc sống trôi qua." - Eleanor Roosevelt
+9. "Hãy nhớ rằng, bạn là người duy nhất có thể thay đổi cuộc sống của mình." - Barack Obama
+10. "Hãy luôn có ước mơ, và đừng để bất cứ ai nói rằng bạn không thể đạt được ước mơ đó." - Walt Disney

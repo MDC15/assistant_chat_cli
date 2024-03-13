@@ -1,0 +1,37 @@
+@-> You: làm cách nào đẻ bạn có quyền truy cập vào thông tin thời gian thực
+
+ AI: Generating response...
+
+>>> 1. **Sử dụng API**:
+    * API (Giao diện lập trình ứng dụng) cho phép bạn lấy thông tin trực tiếp từ các hệ thống và dịch vụ khác.
+    * Có nhiều loại API khác nhau, mỗi loại được thiết kế cho các mục đích cụ thể.
+    * Một số API phổ biến cho phép bạn truy cập thông tin thời gian thực bao gồm:
+        * API dữ liệu thị trường tài chính
+        * API thông tin chuyến bay
+        * API thông tin thời tiết
+        * API thông tin giao thông
+    * Bạn có thể tìm kiếm các API có sẵn trên các trang web như ProgrammableWeb và RapidAPI.
+2. **Sử dụng WebSocket**:
+    * WebSocket là một giao thức mạng cho phép bạn tạo kết nối song công, thời gian thực với một máy chủ.
+    * Khi bạn kết nối với máy chủ bằng WebSocket, bạn có thể gửi và nhận dữ liệu liên tục.
+    * Điều này làm cho WebSocket trở thành một lựa chọn tốt để truy cập thông tin thời gian thực, chẳng hạn như:
+        * Thông tin giá chứng khoán
+        * Thông tin về tình hình giao thông
+        * Thông tin về thời tiết
+    * Bạn có thể tìm hiểu thêm về WebSocket trên trang web của WebSocket Foundation.
+3. **Sử dụng công nghệ đẩy dữ liệu**:
+    * Công nghệ đẩy dữ liệu cho phép bạn nhận dữ liệu ngay khi dữ liệu đó được tạo ra.
+    * Điều này trái ngược với công nghệ kéo dữ liệu, trong đó bạn phải thường xuyên yêu cầu dữ liệu từ máy chủ.
+    * Công nghệ đẩy dữ liệu có thể được sử dụng để truy cập thông tin thời gian thực, chẳng hạn như:
+        * Thông tin về các giao dịch chứng khoán
+        * Thông tin về các chuyến bay
+        * Thông tin về tình hình giao thông
+    * Bạn có thể tìm hiểu thêm về công nghệ đẩy dữ liệu trên trang web của PubNub.
+4. **Sử dụng công nghệ truyền phát trực tuyến**:
+    * Công nghệ truyền phát trực tuyến cho phép bạn phát thông tin thời gian thực cho người dùng.
+    * Điều này có thể được sử dụng để phát sóng tin tức, sự kiện thể thao hoặc các nội dung khác.
+    * Công nghệ truyền phát trực tuyến có thể được sử dụng để truy cập thông tin thời gian thực, chẳng hạn như:
+        * Tin tức trực tiếp
+        * Sự kiện thể thao trực tiếp
+        * Các buổi hòa nhạc trực tiếp
+    * Bạn có thể tìm hiểu thêm về công nghệ truyền phát trực tuyến trên trang web của Livestream.

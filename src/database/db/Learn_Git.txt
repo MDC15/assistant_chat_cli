@@ -1,0 +1,71 @@
+>>> Learn git
+
+**1. Hiểu các khái niệm cơ bản của Git:**
+   - Repository: Nơi lưu trữ mã nguồn và lịch sử phiên bản của nó.
+   - Commit: Một thay đổi được lưu trữ trong repository.
+   - Branch: Một phiên bản riêng biệt của repository.
+   - Tag: Một dấu hiệu đánh dấu một phiên bản cụ thể của repository.
+   - Remote: Một repository khác mà bạn có thể kết nối đến.
+
+**2. Cài đặt Git trên máy tính của bạn:**
+   - Bạn có thể tải xuống trình cài đặt Git từ trang web chính thức của Git.
+   - Sau khi cài đặt Git, bạn có thể mở Terminal hoặc Command Prompt và nhập lệnh "git" để xem phiên bản Git hiện tại của bạn.
+
+**3. Khởi tạo một repository Git mới:**
+   - Để khởi tạo một repository Git mới, hãy mở Terminal hoặc Command Prompt và điều hướng đến thư mục nơi bạn muốn tạo repository.
+   - Sau đó, nhập lệnh "git init" để khởi tạo một repository Git mới.
+
+**4. Thêm các tệp vào repository:**
+   - Để thêm các tệp vào repository Git, hãy sử dụng lệnh "git add". Ví dụ, để thêm tệp "main.py" vào repository, hãy nhập lệnh sau:
+
+     ```
+     git add main.py
+     ```
+
+**5. Thực hiện commit:**
+   - Để thực hiện commit, hãy sử dụng lệnh "git commit". Ví dụ, để thực hiện commit với thông báo "Thêm chức năng mới", hãy nhập lệnh sau:
+
+     ```
+     git commit -m "Thêm chức năng mới"
+     ```
+
+**6. Theo dõi các thay đổi:**
+   - Để theo dõi các thay đổi, hãy sử dụng lệnh "git status". Lệnh này sẽ hiển thị các tệp đã được thay đổi nhưng chưa được thêm vào repository, các tệp đã được thêm vào repository nhưng chưa được commit và các commit đã được thực hiện nhưng chưa được đẩy lên remote.
+
+**7. Xử lý xung đột:**
+   - Khi làm việc với một nhóm, có thể xảy ra xung đột khi nhiều người cùng thực hiện thay đổi trên cùng một tệp. Để xử lý xung đột, bạn có thể sử dụng lệnh "git mergetool". Lệnh này sẽ mở một chương trình so sánh các phiên bản khác nhau của tệp và cho phép bạn chọn phiên bản tốt nhất.
+
+**8. Tạo và hợp nhất branch:**
+   - Branch là một phiên bản riêng biệt của repository. Bạn có thể tạo branch mới bằng lệnh "git branch". Ví dụ, để tạo một branch mới có tên "feature/new-feature", hãy nhập lệnh sau:
+
+     ```
+     git branch feature/new-feature
+     ```
+
+   - Để hợp nhất branch, hãy sử dụng lệnh "git merge". Ví dụ, để hợp nhất branch "feature/new-feature" vào branch "master", hãy nhập lệnh sau:
+
+     ```
+     git merge feature/new-feature
+     ```
+
+**9. Quản lý remote:**
+   - Remote là một repository khác mà bạn có thể kết nối đến. Bạn có thể thêm remote bằng lệnh "git remote add". Ví dụ, để thêm remote có tên "origin" đến địa chỉ "https://github.com/user/repository", hãy nhập lệnh sau:
+
+     ```
+     git remote add origin https://github.com/user/repository
+     ```
+
+   - Để đẩy các thay đổi lên remote, hãy sử dụng lệnh "git push". Ví dụ, để đẩy các thay đổi lên remote "origin" trên branch "master", hãy nhập lệnh sau:
+
+     ```
+     git push origin master
+     ```
+
+**10. Làm việc với nhóm:**
+   - Khi làm việc với một nhóm, bạn có thể sử dụng các tính năng của Git để cộng tác hiệu quả. Một số tính năng hữu ích bao gồm:
+     - Pull requests: Cho phép bạn đề xuất các thay đổi từ một branch đến một branch khác.
+     - Reviews: Cho phép các thành viên khác trong nhóm xem xét và bình luận về các thay đổi của bạn.
+     - Merge requests: Cho phép bạn hợp nhất các thay đổi từ một branch đến một branch khác.
+
+**11. Tiếp tục học hỏi:**
+   - Git là một công cụ rất mạnh mẽ và có nhiều tính năng nâng cao. Bạn có thể tiếp tục học hỏi về Git bằng cách đọc tài liệu chính thức của Git, tham gia các diễn đàn và cộng đồng Git, và thực hành thường xuyên.

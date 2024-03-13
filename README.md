@@ -22,3 +22,7 @@
 ### Run project
 
     run terminal: "npm run dev" or "npm run start"
+
+`Add new tools and features:`
+Save data in: src/data/
+Use DB: Local storage (sqlite)

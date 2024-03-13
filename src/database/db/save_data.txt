@@ -1,0 +1,41 @@
+>>> ```js intorface DB:
+
+// Import the Dexie library
+import Dexie from 'dexie';
+
+// Create a new Dexie database called 'myDB'
+const db = new Dexie('myDB');
+
+// Define the schema for the database
+db.version(1).stores({
+  people: 'id, name, age',
+  pets: 'id, name, type',
+});
+
+// Add some data to the database
+db.transaction('rw', db.people, db.pets, async () => {
+  await db.people.add({ name: 'John Doe', age: 30 });
+  await db.people.add({ name: 'Jane Smith', age: 25 });
+  await db.pets.add({ name: 'Fluffy', type: 'cat' });
+  await db.pets.add({ name: 'Spot', type: 'dog' });
+});
+
+// Query the database
+db.transaction('r', db.people, async () => {
+  const results = await db.people.where('age').above(25).toArray();
+  console.log(results); // [{ name: 'John Doe', age: 30 }]
+});
+
+// Update the database
+db.transaction('rw', db.people, async () => {
+  await db.people.update(1, { age: 31 });
+});
+
+// Delete data from the database
+db.transaction('rw', db.pets, async () => {
+  await db.pets.delete(2);
+});
+
+// Close the database connection
+db.close();
+```

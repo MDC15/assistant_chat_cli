@@ -1,0 +1,10 @@
+>>> 1. Mở dấu nhắc lệnh bằng cách nhấn Windows + R, nhập "cmd" rồi nhấn Enter.
+2. Điều hướng đến thư mục bạn muốn làm việc bằng cách sử dụng lệnh "cd". Ví dụ: để điều hướng đến ổ đĩa C, hãy nhập "cd C:\".
+3. Sử dụng lênh "dir" để liệt kê các tệp và thư mục trong thư mục hiện tại.
+4. Sử dụng lệnh "copy" để sao chép các tệp từ một thư mục sang thư mục khác. Ví dụ: để sao chép tệp "file.txt" từ thư mục hiện tại sang thư mục "C:\My Documents", hãy nhập "copy file.txt C:\My Documents".
+5. Sử dụng lệnh "move" để di chuyển các tệp từ một thư mục sang thư mục khác. Ví dụ: để di chuyển tệp "file.txt" từ thư mục hiện tại sang thư mục "C:\My Documents", hãy nhập "move file.txt C:\My Documents".
+6. Sử dụng lệnh "rename" để đổi tên tệp. Ví dụ: để đổi tên tệp "file.txt" thành "newfile.txt", hãy nhập "rename file.txt newfile.txt".
+7. Sử dụng lệnh "delete" để xóa các tệp. Ví dụ: để xóa tệp "file.txt", hãy nhập "delete file.txt".
+8. Sử dụng lệnh "mkdir" để tạo thư mục mới. Ví dụ: để tạo thư mục "My Documents", hãy nhập "mkdir My Documents".
+9. Sử dụng lệnh "rmdir" để xóa thư mục. Ví dụ: để xóa thư mục "My Documents", hãy nhập "rmdir My Documents".
+10. Sử dụng lệnh "cd" để điều hướng đến thư mục mẹ. Ví dụ: để điều hướng đến thư mục mẹ của thư mục hiện tại, hãy nhập "cd ..".
