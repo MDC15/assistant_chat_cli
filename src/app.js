@@ -12,6 +12,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+// Access your API key as an environment variable
 const genAI = new GoogleGenerativeAI(config_api.apiKey);
 
 const App = async function AI() {
@@ -21,7 +22,7 @@ const App = async function AI() {
   const warningColor = "\x1b[33m"; // Yellow color
   const resetCode = "\x1b[0m";
 
-  const model = genAI.getGenerativeModel({ model: "gemini-1.0-pro-001	" });
+  const model = genAI.getGenerativeModel({ model: "gemini-1.0-pro-001" });
 
   async function askQuestion() {
     // Get input data from the user
@@ -38,15 +39,24 @@ const App = async function AI() {
 
       const chat = model.startChat({
         generationConfig: {
-          temperature: 0.9,
-          topK: 1,
+          temperature: 0.5,
+          topK: 50,
           topP: 1,
           maxOutputTokens: 2048,
         },
         // Set the contents of the chat message to the specified
         contents: [
           {
-            role: "MDC",
+            role: "user",
+            parts:
+              "My name is MDC, a technology developer. Tooi created you my good friend. My name is Donna, a wonderful assistant who helps me and works with me.",
+          },
+          {
+            role: "model",
+            parts: "hell! how are you?",
+          },
+          {
+            role: "user",
             parts: msg, // Use the user's input message
           },
           {

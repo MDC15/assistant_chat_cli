@@ -69,3 +69,47 @@
 
 **11. Tiếp tục học hỏi:**
    - Git là một công cụ rất mạnh mẽ và có nhiều tính năng nâng cao. Bạn có thể tiếp tục học hỏi về Git bằng cách đọc tài liệu chính thức của Git, tham gia các diễn đàn và cộng đồng Git, và thực hành thường xuyên.
+
+
+@-> You: How to use git
+
+ AI: Generating response...
+
+>>> **Installation:**
+
+1. Visit https://git-scm.com/downloads to download the latest version of Git.
+2. Follow the installation instructions for your operating system.
+
+**Getting Started:**
+
+1. **Create a repository:** Run `git init` in the directory you want to track.
+2. **Stage files:** Use `git add <file_name>` to add files to the staging area for the next commit.
+3. **Commit:** Run `git commit -m "commit message"` to create a snapshot of your staged changes.
+4. **Push to a remote repository:** Connect your local repository to a remote repository (e.g., GitHub, GitLab) using `git remote add <remote_name> <remote_url>`. Then, push your changes using `git push <remote_name> <branch_name>`.
+
+**Basic Commands:**
+
+* **git status:** Shows the current state of your working tree and staging area.
+* **git diff:** Shows the differences between your current working tree and the last commit.
+* **git log:** Lists all commits in your repository.
+* **git checkout <branch_name>:** Switches to the specified branch.
+* **git branch:** Lists all branches in your repository.
+* **git pull:** Fetches changes from the remote repository and merges them into your local branch.
+* **git merge:** Merges one branch into another.
+
+**Advanced Commands:**
+
+* **git revert:** Undoes a specific commit.
+* **git rebase:** Reorganizes commits or merges commits into a different order.
+* **git fetch:** Fetches changes from the remote repository but does not merge them.
+* **git cherry-pick:** Selects and applies a specific commit from another branch.
+* **git stash:** Temporarily saves your uncommitted changes so you can work on something else.
+
+**Tips:**
+
+* Use a text editor or IDE with Git integration for easier management.
+* Create branches for new features or changes to avoid merging conflicts.
+* Use commit messages that are concise and descriptive.
+* Regularly push your changes to the remote repository.
+* Use Git commands in conjunction with command line tools like `grep` and `find` for advanced search and manipulation.
+

@@ -2,5 +2,8 @@
 .env
 node_modules
 .vscode
+tatus
 package-lock.json
-database
+database/db
+db
+tatus
