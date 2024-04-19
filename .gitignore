@@ -1,0 +1,8 @@
+// Unlock the following folder and files with:
+.env
+node_modules
+.vscode
+tatus
+database/db
+db
+tatus
