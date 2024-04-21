@@ -1,9 +1,9 @@
-const readline = require("readline");
 const {
   GoogleGenerativeAI,
   HarmCategory,
   HarmBlockThreshold,
 } = require("@google/generative-ai");
+const readline = require("readline");
 const config_api = require("./api/config_api");
 
 const rl = readline.createInterface({
@@ -36,7 +36,8 @@ async function askQuestion() {
         console.log(
           `${colors.warning}\n>>> System: Please message or ask questions before sending to AI.${colors.reset}`
         );
-        return askQuestion();
+        askQuestion();
+        return;
       }
 
       const chat = model.startChat({
